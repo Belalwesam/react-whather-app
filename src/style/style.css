@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.app {
+  padding: 4rem 0;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/cold-bg.jpg");
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.app::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.warm {
+  background: url("../assets/warm-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form input {
+  padding: 0.5rem 1rem;
+  color: #313131;
+  font-size: 1.09rem;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+form button {
+  background-color: #313131;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 0.99rem;
+  padding: 0.4rem 2rem;
+  color: #fff;
+}
+
+.temp-box h1 {
+  display: inline-block;
+  padding: 2.5rem 3rem;
+  letter-spacing: 3px;
+  background: rgba(207, 206, 206, 0.4);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 3rem;
+  -webkit-box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.temp-box p {
+  margin: 0.5rem 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */

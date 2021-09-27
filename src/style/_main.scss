@@ -1,0 +1,65 @@
+.app {
+  padding: 4rem 0;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/cold-bg.jpg");
+  transition: all 0.4s ease-in;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.app.warm {
+  background: url("../assets/warm-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form {
+  input {
+    padding: 0.5rem 1rem;
+    color: rgb(49, 49, 49);
+    font-size: 1.09rem;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+  }
+  button {
+    background-color: rgb(49, 49, 49);
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 0.99rem;
+    padding: 0.4rem 2rem;
+    color: #fff;
+  }
+}
+.temp-box {
+  h1 {
+    display: inline-block;
+    padding: 2.5rem 3rem;
+    letter-spacing: 3px;
+    background: rgba(207, 206, 206, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 3rem;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    font-family: $font-family;
+  }
+  p {
+    margin: 0.5rem 0;
+    color: #fff;
+    font-size: 3rem;
+  }
+}
